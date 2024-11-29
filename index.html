@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1">
+    <title>It's me</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div id="image-container" style="display:none;" >
+        <div id= "cursor"> </div> </div>
+    <div class="display" id="display"></div>
+    
+    <div id="bye" class="hidden blink" > Hi,* Me!~ </div>   
+
+    <img src="bar1.png" alt="이미지 1" id="image1" class="hidden">
+    <img src="bar2.png" alt="이미지 2" id="image2" class="hidden">
+    <img src="bar3.png" alt="이미지 3" id="image3" class="hidden">
+    <img src="bar4.png" alt="이미지 4" id="image4" class="hidden">
+    <img src="bar5.png" alt="이미지 5" id="image5" class="hidden">
+    <img src="bar6.png" alt="이미지 6" id="image6" class="hidden">
+    <img src="bar7.png" alt="이미지 7" id="image7" class="hidden" onclick='next()'>
+    <img src="bar8.png" alt="이미지 8" id="image8" class="hidden">
+    
+
+    <video id="webcam" class="hidden" autoplay></video>
+    <button class="hidden" id="reset" onClick="window.location.reload()"> </button>
+    
+    <div class="calculator">
+        <div class="key" id="1">i</div>
+        <div class="key" id="2">'</div>
+        <div class="key" id="3">e</div>
+        <div class="key" id="4">s</div>
+        <div class="key" id="5">T</div>
+        <div class="key" id="6">m</div>
+        <div class="key" id="7">!</div>
+        <div class="key" id="8">n</div>
+        <div class="key" id="9">*</div>
+
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
+

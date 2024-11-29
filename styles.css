@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'pixel';
+  src: url(./Pixel.ttf);
+}
+
+body {
+    font-family: "pixel";
+    min-height: 100vh;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.calculator {
+    display: grid;
+    position: fixed;
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    grid-template-columns: repeat(3, 70px);
+    grid-gap: 5px;
+    color: white;
+}
+
+.key {
+    width: 70px;
+    height: 70px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px,10px;
+    transform: translate(0%, 0%);
+}
+
+.display {
+    margin-bottom: 200px;
+    font-size: 50px;
+    text-align: center;
+    top: 20%;
+    border: 1px;
+    padding: 10px;
+}
+
+#image-container {
+    display: none;
+    position: fixed;
+    width : 12px;
+    height : 55px;
+    background-color : black;
+    transform: translate(0%, 0%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* 새로넣은거 */
+
+.hidden {
+    display: none;
+  }
+
+  #image1 {
+    scale: 60%;
+    z-index: 1;
+    transform: translate(0%, 0%);
+    position: fixed;
+    cursor: pointer;
+  }
+  #image2 {
+    scale: 30%;
+    z-index: 2;
+    transform: translate(0%, 0%);
+    position: fixed;
+    cursor: pointer;
+  }
+  #image3 {
+    scale: 35%;
+    z-index: 2;
+    transform: translate(0%, 0%);
+    position: fixed;
+    cursor: pointer;
+  }
+  #image4 {
+    scale: 40%;
+    z-index: 2;
+    transform: translate(0%, 0%);
+    position: fixed;
+    cursor: pointer;
+  }
+  #image5 {
+    scale: 50%;
+    z-index: 2;
+    transform: translate(0%, 0%);
+    position: fixed;
+    cursor: pointer;
+  }
+  #image6 {
+    scale: 70%;
+    z-index: 2;
+    transform: translate(0%, 0%);
+    position: fixed;
+    cursor: pointer;
+  }
+  #image7 {
+    scale: 89%;
+    z-index: 2;
+    transform: translate(0%, 0%);
+    position: fixed;
+    cursor: pointer;
+  }
+  #image8 {
+    scale: 89%;
+    z-index: 2;
+    position: fixed;
+  }
+
+  #reset {
+    position: fixed;
+    transform: translate(0%, 0%);
+    height: 70%;
+    bottom: 10%;
+    width: 50%;
+    align-items: center;
+    opacity: 0%;
+    z-index: 10;
+    cursor: wait;
+  }
+
+  #webcam {
+    position: fixed;
+    height: 65%;
+    bottom: 10%;
+    margin: 0;
+    z-index: 3;
+    pointer-events: none;
+    filter: grayscale(100%);
+    transform: translate(0%, 0%);
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+  }
+
+  #bye {
+    position: absolute;
+    text-align: center;
+    font-size: 100pt;
+    color: white;
+    top: 4%;
+    z-index: 4;
+  }
+
+.blink { 
+    animation: blink-effect 1s step-end infinite; }
+    @keyframes blink-effect { 50% { opacity: 0; } } 
+
+ video {
+  border: 25px solid #575756;
+ }
